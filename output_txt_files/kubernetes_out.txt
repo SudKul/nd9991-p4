@@ -7,3 +7,11 @@ service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   43m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 
+#################################################
+(.devops) (base) ➜  nd9991-p4 git:(main) ✗ ./make_prediction.sh
+Port: 80
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}

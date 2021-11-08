@@ -14,4 +14,5 @@ echo "Docker ID and Image: $dockerpath"
 # Step 3:
 # Push image to a docker repository
 docker image tag nd9991_p4_project:latest sudkul/nd9991_p4_project:latest
+docker login --username=sudkul --email=sudhanshu.kulshrestha@gmail.com
 docker push sudkul/nd9991_p4_project:latest
