@@ -1,1 +1,9 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) (base) ➜  nd9991-p4 git:(main) ✗ ./run_kubernetes.sh
+NAME      READY   STATUS    RESTARTS   AGE
+pod/app   1/1     Running   0          39s
+
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   43m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+
