@@ -1,1 +1,20 @@
-<paste log output from Docker prediction, here>
+(.devops) (base) ➜  nd9991-p4 git:(main) ✗ docker run --name myContainer -it -p 8000:80 nd9991_p4_project
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 677-730-178
+[2021-11-08 08:56:47,536] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2021-11-08 08:56:47,554] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-11-08 08:56:47,565] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-11-08 08:56:47,570] INFO in app: prediction: [20.35373177134412]
+172.17.0.1 - - [08/Nov/2021 08:56:47] "POST /predict HTTP/1.1" 200 -
