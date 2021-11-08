@@ -9,7 +9,7 @@ Forwarding from [::1]:8000 -> 80
 
 #################################################
 (.devops) (base) ➜  nd9991-p4 git:(main) ✗ ./make_prediction.sh
-Port: 80
+Port: 8000
 {
   "prediction": [
     20.35373177134412
